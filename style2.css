@@ -1,0 +1,387 @@
+/* Basic reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Navbar styles */
+  nav ul {
+    list-style-type: none;
+    background-color:rgb(122, 103, 79);
+    text-align: center;
+  }
+  
+  nav ul li {
+    display: inline-block;
+  }
+  
+  nav ul li a {
+    display: block;
+    color: white;
+    padding: 20px;
+    text-decoration: none;
+  }
+  header
+           {
+              background-color:rgb(32, 26, 26);
+              color: #fff;
+              padding: 20px;
+              text-align: center;
+           }
+           nav ul {
+            padding: 0;
+        }
+  /* CSS for dropdown menu */
+  .dropdown {
+
+    position: relative;
+    display: inline-block;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  .dropdown-content a:hover {
+    background-color: #f1f1f1;
+  }
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  .container {
+    display: flex; /* Use flexbox */
+   
+  }
+  .paragraph 
+  {
+    padding-bottom: 20px; /* Adds 20px of space inside the bottom of each paragraph */
+  }
+  
+  .paragraph {
+    width: 40%; /* Set width to control spacing between paragraphs */
+  }
+  /* CSS for controlling image dimensions */
+  .paragraph-container {
+        display: flex;
+    }
+    .paragraph-container img {
+        width: 100px; /* Adjust width as needed */
+        height: auto;
+        margin-right: 20px; /* Adjust margin between image and text */
+    }
+    #contact-footer
+      {
+          position: fixed;
+          bottom: 0;
+          left: 0;
+          width: 100%;
+          background-color: rgb(234, 223, 223);
+          padding: 2px;
+          text-align: center;
+  
+      }
+      .contact-icons a 
+      {
+              margin-right: 20px; /* Adjust the right margin to create space between icons */
+              display: inline-block; 
+          }
+        /* CSS for the icon */
+        .icon-image {
+            width: 30px; /* Adjust the width of the image */
+            height: auto; /* Maintain aspect ratio */
+            margin-right: 10px; /* Adjust spacing between icon and text */
+        }
+        .reach-out {
+          background-color: #f2f2f2; /* Light grey background */
+          color: #333; /* Dark text */
+          text-align: center;
+          padding: 20px 0; /* 20px padding on top and bottom */
+          margin-top: 40px; /* Add some space above the box */
+          border-top: 1px solid #ccc; /* Light grey border on the top for separation */
+      }
+      
+      .reach-out p {
+          margin: 0 0 10px 0; /* Remove default margin from p and add some space below */
+          font-size: 20px; /* Larger text size */
+      }
+      
+      .reach-out-link {
+          background-color: #007bff; /* Bootstrap primary blue */
+          color: white; /* White text */
+          padding: 10px 20px; /* Padding inside the link for a button-like appearance */
+          text-decoration: none; /* Remove underline from link */
+          border-radius: 5px; /* Rounded corners */
+      }
+      
+      .reach-out-link:hover {
+          background-color: #0056b3; /* Darker blue on hover */
+      }
+      section {
+        margin-bottom: 20px;
+    }
+    
+    p {
+        margin-bottom: 1em; /* Add a bit of space between paragraphs */
+    }
+    
+    /* Add double spaces between sentences */
+    p::after {
+        content: "\00a0\00a0"; /* Unicode for non-breaking space */
+    }
+    /* Add double spaces between headings */
+h1, h2, h3, h4, h5, h6 {
+    margin-bottom: 20px; /* Adjust the value as needed */
+}
+/* Apply styles to your form elements */
+#contactForm input[type="text"],
+#contactForm input[type="email"],
+#contactForm textarea {
+    width: 50%; /* Decrease width */
+    padding: 8px; /* Adjust padding */
+    margin: 8px 0; /* Add some margin for spacing between form elements */
+    display: inline-block;
+    border: 1px solid #ccc; /* Add a border to the input fields */
+    border-radius: 4px; /* Optional: Adds rounded corners to your input fields */
+    box-sizing: border-box; /* Make sure padding does not affect the final size */
+}
+
+#contactForm button {
+    width: 100%; /* Button width */
+    background-color: #4CAF50; /* Button color */
+    color: white;
+    padding: 12px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#contactForm button:hover {
+    background-color: #45a049; /* Darker shade for hover effect */
+}
+
+/* Adjust this media query as needed */
+@media screen and (max-width: 600px) {
+    #contactForm input[type="text"],
+    #contactForm input[type="email"],
+    #contactForm textarea,
+    #contactForm button {
+        width: 100%; /* Full width on smaller screens */
+        margin-top: 0;
+    }
+}
+/* Style for the chat container */
+.chat-container {
+    background-color: #007bff; /* Blue background color */
+    color: #ffffff; /* White text color */
+    text-align: center; /* Center align text */
+    padding: 20px; /* Add padding for spacing */
+    border-radius: 8px; /* Rounded corners */
+    margin-top: 20px; /* Add margin from the form */
+}
+
+/* Style for the "Let's Chat!" heading */
+.chat-container h2 {
+    margin-bottom: 10px; /* Add some space below the heading */
+}
+
+/* Style for the paragraph */
+.chat-container p {
+    margin-bottom: 20px; /* Add space below the paragraph */
+}
+
+/* Style for the email button */
+.email-button {
+    background-color: #ffffff; /* White background color */
+    color: #007bff; /* Blue text color */
+    border: 2px solid #ffffff; /* White border */
+    padding: 10px 20px; /* Add padding */
+    border-radius: 5px; /* Rounded corners */
+    font-size: 16px; /* Increase font size */
+    cursor: pointer; /* Show pointer cursor on hover */
+}
+
+/* On hover, change button background and border color */
+.email-button:hover {
+    background-color: #007bff; /* Blue background color */
+    color: #ffffff; /* White text color */
+    border-color: #007bff; /* Blue border color */
+}
+/* Style for the chat container */
+.chat-container {
+    position: fixed; /* Fixed positioning */
+    bottom: 20px; /* Distance from the bottom of the viewport */
+    right: 20px; /* Distance from the left of the viewport */
+    background-color: #007bff; /* Blue background color */
+    color: #ffffff; /* White text color */
+    text-align: center; /* Center align text */
+    padding: 20px; /* Add padding for spacing */
+    border-radius: 70px; /* Make the container oval */
+    margin-top: 20px; /* Add margin from the form */
+    width: 200px; /* Adjust width as needed */
+    cursor: pointer; /* Show pointer cursor on hover */
+}
+
+/* Style for the hidden form */
+.hidden {
+    display: none; /* Hide the form by default */
+}
+/* Style for the headings */
+h1, h2, h3, h4, h5, h6 {
+    margin-bottom: 30px; /* Triple space between headings */
+}
+
+/* Style for the paragraphs */
+p {
+    margin-bottom: 30px; /* Triple space between paragraphs */
+}
+/* Style for the join group section */
+#joinGroup {
+    background-color: #f9f9f9; /* Light background color */
+    padding: 50px 20px; /* Padding for spacing */
+    text-align: center; /* Center align text */
+}
+
+/* Style for the join group container */
+.join-group-container {
+    max-width: 600px; /* Maximum width of the container */
+    margin: 0 auto; /* Center the container horizontally */
+}
+
+/* Style for the join group heading */
+.join-group-container h2 {
+    color: #333; /* Heading text color */
+}
+
+/* Style for the join group paragraph */
+.join-group-container p {
+    color: #666; /* Paragraph text color */
+}
+
+/* Style for the join group form */
+#joinGroupForm {
+    margin-top: 20px; /* Add margin from the paragraph */
+}
+
+#joinGroupForm label {
+    display: block; /* Display labels as blocks for better spacing */
+    margin-bottom: 10px; /* Add space below labels */
+}
+
+#joinGroupForm input[type="email"] {
+    width: 100%; /* Full width input */
+    padding: 10px; /* Add padding */
+    margin-bottom: 20px; /* Add space below input */
+    box-sizing: border-box; /* Include padding and border in the input's total width */
+}
+
+#joinGroupForm button {
+    background-color: #007bff; /* Button background color */
+    color: #fff; /* Button text color */
+    padding: 10px 20px; /* Add padding */
+    border: none; /* Remove default button border */
+    border-radius: 5px; /* Add rounded corners */
+    cursor: pointer; /* Show pointer cursor on hover */
+}
+
+#joinGroupForm button:hover {
+    background-color: #0056b3; /* Darker shade of button background color on hover */
+}
+body {
+    font-family: Arial, sans-serif;
+}
+.secondary-nav ul {
+    text-align: left; /* Aligns the secondary nav to the left */
+    background-color: #555; /* Slightly different color to distinguish from the main nav */
+}
+.container {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.suggestion-box {
+    text-align: center;
+}
+
+button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+hr {
+    border: none;
+    height: 1px;
+    background-color: #ccc;
+    margin: 20px 0;
+}
+
+.contact-info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.initial-circle {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #007bff;
+    color: white;
+    text-align: center;
+    line-height: 40px;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+.search-bar input[type="text"] {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+.image-container {
+    display: flex;
+    justify-content: space-between;
+    margin: 80px; /* Adjust margin as needed */
+}
+
+.image-container img {
+    width: 20%; /* Adjust width of each image */
+    height: auto; /* Maintain aspect ratio */
+}
+
+.image-wrapper {
+    text-align: center;
+}
+
+.subtitle {
+    margin-top: 5px; /* Add some space between image and subtitle */
+    font-style: italic;
+}
+
+
+  

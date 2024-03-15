@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Topstar writers </title>
+  <link rel="stylesheet" href="style2.css">
+  <style>
+    body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-image: url('file:///C:/Users/user/Desktop/Writers website/images/About background.jpg'), url('file:///:c:');
+    background-position: center top, center bottom; /* Position the two background images */
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+    .logo {
+        float: center;
+        margin-top: 20px; /* Adjust as needed */
+        margin-right: 20px; /* Adjust as needed */
+        width: 80px; /* Adjust width of the logo */
+        height: auto;
+    }
+    .contact-sections {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 30px; /* Add space from the top margin */
+
+        }
+        .contact-info {
+            width: 48%; /* Adjust width as needed */
+            padding: 20px;
+            border: 0px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box; /* Include padding and border in width calculation */
+            display: flex; /* Use flexbox */
+    flex-direction: column; /* Stack items vertically */
+    justify-content: center; /* Center items vertically */
+        }
+        .contact-form {
+            width: 40%; /* Adjust width as needed */
+            padding: 5px;
+            border: 0px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box; /* Include padding and border in width calculation */
+        }
+        .contact-form form {
+            display: flex;
+            flex-direction: column;
+        }
+        .contact-form input,
+        .contact-form textarea {
+            margin-bottom: 1px;
+            padding: 5px;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+            box-sizing: border-box;
+        }
+        .contact-form button {
+            padding: 5px 10px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 3px;
+            cursor: pointer;
+        }
+        .contact-form input,
+.contact-form textarea {
+    height: 40px; /* Adjust height as needed */
+    width: 80%; /* Make inputs fill the entire width of their container */
+}
+
+.contact-form button {
+    height: 40px; /* Adjust height as needed */
+    width: 40%; /* Make button fill the entire width of its container */
+}
+  </style>
+</head>
+  <body>
+    <header>
+        <img src="c:\Users\user\Desktop\Writers website\images\Topstar logo.jpeg" alt="Umundu Consultancy Logo" class="logo">
+    <h1>CONTACT TOPSTAR WRITERS </h1>
+    
+</header>
+<nav>
+    <ul>
+        <li><a href="Index.html">Home</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="services.html">Our services</a></li>
+        <li><a href="Fields.html">Fields</a></li>
+        <li><a href="examples.html">Examples</a></li>
+        <li><a href="contact.html">Contact Us</a></li> 
+        
+  </ul>
+</nav>
+<div class="contact-sections">
+    <div class="contact-info">
+        <center><h2>GET IN TOUCH</h2></center>
+        <center><h2>Adress:Houston, Texas, United States</h2></center>
+        <center><h2>Email: patricklaban11@gmail.com</h2></center>
+        <center><h2>Phone: +1 (985) 412-8277</h2></center>
+    </div>
+    <div class="contact-form">
+        <h2>Contact Form</h2>
+        
+            <label for="name">Name:</label><br>
+            <input type="text" id="name" name="name" required> <br><br>
+            
+            <label for="email">Your Email:</label><br>
+            <input type="email" id="email" name="email" required><br><br>
+            
+
+            
+            <label for="subject">Subject:</label><br>
+            <input type="text" id="subject" name="subject" required><br><br>
+            
+            <label for="message">Your Message:</label><br>
+            <textarea id="message" name="message" rows="4" required></textarea><br><br>
+            
+            <button type="submit"><h4>SUBMIT</h4></button>
+        </form>
+    </div>
+</div>
+    <script>
+        document.getElementById("contactForm").addEventListener("submit", function(event) {
+            event.preventDefault(); // Prevent the form from submitting normally
+            
+            var formData = new FormData(this);
+            
+            // Construct email body
+            var emailBody = "";
+            formData.forEach(function(value, key) {
+                emailBody += key + ": " + value + "%0D%0A"; // %0D%0A represents line break
+            });
+
+            // Redirect to email client with filled email
+            window.location.href = "mailto:circleoflovepodcast@gmail.com?subject=" + encodeURIComponent(formData.get("subject")) + "&body=" + encodeURIComponent(emailBody);
+        });
+    </script>
+    <footer>
+        <center><p>©2024 by TOPSTAR FREELANCING SERVICES. All rights reserved.</p></center>
+    </footer>
+     <footer id="contact-footer">
+        <div>
+            <div class="icon">
+                <a href="adress: Houston, TEXAS">
+                    <img src="c:\Users\user\Desktop\Writers website\images\Adress Icon.jpg" alt="" class="icon-image">
+                    <a href="adress:Houston, TEXAS, USA">Adress: Houston, TEXAS</a></a>
+                
+                    <a href="mailto:patricklaban11@gmail.com">
+                    <img src="c:\Users\user\Desktop\Writers website\images\gmail Icon.jpg" alt="Icon" class="icon-image"></a>
+                    <a href="mailto:patricklaban11@gmail.com">patricklaban11@gmail.com</a>
+                
+                    <a href="tel: +1 (985) 412-8277">
+                    <img src="c:\Users\user\Desktop\Writers website\images\call.jpg" alt="call" class="icon-image"></a>
+                    <a href="tel:+1 (985) 412-8277">Call: +1 (985) 412-8277</a>
+            
+                    <a href="tel: +1 (985) 412-8277">
+                      <img src="c:\Users\user\Desktop\Writers website\images\call.jpg" alt="call" class="icon-image"></a>
+                      <a href="tel:+1 (985) 412-8277">message: +1 (985) 412-8277</a>
+        </div>
+    </footer>
+  </body>
+</html>
