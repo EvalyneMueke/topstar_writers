@@ -101,43 +101,41 @@
         <center><h2>Email: patricklaban11@gmail.com</h2></center>
         <center><h2>Phone: +1 (985) 412-8277</h2></center>
     </div>
-    <div class="contact-form">
-        <h2>Contact Form</h2>
+    <form id="contactForm">
+        <h2>Reach Us</h2>
+        <label for="name">Name:</label><br>
+        <input type="text" id="name" name="name" required size="50"> <br><br>
         
-            <label for="name">Name:</label><br>
-            <input type="text" id="name" name="name" required> <br><br>
-            
-            <label for="email">Your Email:</label><br>
-            <input type="email" id="email" name="email" required><br><br>
-            
-
-            
-            <label for="subject">Subject:</label><br>
-            <input type="text" id="subject" name="subject" required><br><br>
-            
-            <label for="message">Your Message:</label><br>
-            <textarea id="message" name="message" rows="4" required></textarea><br><br>
-            
-            <button type="submit"><h4>SUBMIT</h4></button>
-        </form>
-    </div>
-</div>
-    <script>
-        document.getElementById("contactForm").addEventListener("submit", function(event) {
-            event.preventDefault(); // Prevent the form from submitting normally
-            
-            var formData = new FormData(this);
-            
-            // Construct email body
-            var emailBody = "";
-            formData.forEach(function(value, key) {
-                emailBody += key + ": " + value + "%0D%0A"; // %0D%0A represents line break
-            });
-
-            // Redirect to email client with filled email
-            window.location.href = "mailto:circleoflovepodcast@gmail.com?subject=" + encodeURIComponent(formData.get("subject")) + "&body=" + encodeURIComponent(emailBody);
+        <label for="email">Your Email:</label><br>
+        <input type="email" id="email" name="email" required><br><br>
+        
+        
+        <label for="subject">Subject:</label><br>
+        <input type="text" id="subject" name="subject" required><br><br>
+        
+        <label for="message">Your Message:</label><br>
+        <textarea id="message" name="message" rows="4" required></textarea><br><br>
+        
+        <button type="submit"><h4>SUBMIT</h4></button>
+    </form>
+<script>
+    document.getElementById("contactForm").addEventListener("submit", function(event) {
+        event.preventDefault(); // Prevent the form from submitting normally
+        
+        var formData = new FormData(this);
+        
+        // Construct email body
+        var emailBody = "";
+        formData.forEach(function(value, key) {
+            emailBody += key + ": " + value + "%0D%0A"; // %0D%0A represents line break
         });
-    </script>
+
+        // Redirect to email client with filled email
+        window.location.href = "mailto:patricklaban11@gmail.com?subject=" + encodeURIComponent(formData.get("subject")) + "&body=" + encodeURIComponent(emailBody);
+    });
+</script>
+</div>
+</div>
     <footer>
         <center><p>©2024 by TOPSTAR FREELANCING SERVICES. All rights reserved.</p></center>
     </footer>

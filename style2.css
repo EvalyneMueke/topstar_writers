@@ -160,14 +160,17 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #contactForm button {
-    width: 100%; /* Button width */
-    background-color: #4CAF50; /* Button color */
+    /* Button width */
+    background-color:blue; /* Button color */
     color: white;
     padding: 12px 20px;
     margin: 8px 0;
     border: none;
     border-radius: 4px;
     cursor: pointer;
+
+    height: 40px; /* Adjust height as needed */
+    width: 40%; /* Make button fill the entire width of its container */
 }
 
 #contactForm button:hover {
